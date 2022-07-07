@@ -1,4 +1,4 @@
-const getAllPossibilities = () =>{
+const getAllPossibilities = (a) =>{
 
     var res = ["1"], combin;
 
@@ -13,7 +13,7 @@ const getAllPossibilities = () =>{
     return combin.filter((combo) =>{
       return combo.split(" ").reduce((x,y) =>{
         return x/1+y/1;
-      }) == 100;
+      }) == a;
     })
 
     .map((x) =>{
@@ -21,4 +21,4 @@ const getAllPossibilities = () =>{
     });   
 }
 
-console.log(getAllPossibilities());
+console.log(getAllPossibilities(100));

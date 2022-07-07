@@ -1,10 +1,10 @@
-const combaination = (newList1, newList2) =>{
+const combaination = (list1, list2) =>{
     var newList = [];
 
-    for (var i=0;i<newList1.length;++i) {
+    for (var i=0;i<list1.length;++i) {
 
-        newList.push(newList1[i]);
-        newList.push(newList2[i]);
+        newList.push(list1[i]);
+        newList.push(list2[i]);
 
     }
     return newList;
